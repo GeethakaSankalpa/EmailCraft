@@ -4,7 +4,7 @@ public class Email {
     private String firstName;
     private String lastName;
     private String password;
-    private int defaultPasswordLength;
+    private int defaultPasswordLength = 10;
     private String department;
     private int mailboxCapacity;
     private String alternateEmail;
@@ -21,6 +21,7 @@ public class Email {
 
         //  return a random password
         this.password = randomPassword(defaultPasswordLength);
+        System.out.println(this.password);
     }
 
     // ask for the department
@@ -55,8 +56,7 @@ public class Email {
         char[] password = new char[length];
         for (int i=0; i < length; i++){
             int randomPassword = (int) (Math.random() * passwordSet.length());
-            System.out.println(randomPassword);
-            System.out.println(passwordSet.charAt(randomPassword));
+
             password[i] = passwordSet.charAt(randomPassword);
         }
         return new String(password);
