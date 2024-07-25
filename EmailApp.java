@@ -1,10 +1,16 @@
 import java.util.*;
 
+/**
+ * EmailApp is a console-based application that generates emails and passwords.
+ */
 public class EmailApp {
     public static void main(String[] args){
         menu();
     }
 
+    /**
+     * The menu method that displays the options to the user and handles their input.
+     */
     public static void menu(){
         int choice;
         Email email = null;
