@@ -15,19 +15,16 @@ public class Email {
     public Email(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        System.out.println("EMAIL CREATED : " + this.firstName + " " + this.lastName);
 
         // ask for a department
         this.department = setDepartment();
-        System.out.println("Department: " + this.department);
 
         //  return a random password
         this.password = randomPassword(defaultPasswordLength);
-        System.out.println(this.password);
 
         // combine elements to generate email
         email = firstName.toLowerCase()+"."+lastName.toLowerCase()+"@" + department +"." +companySuffix;
-        System.out.println(email);
+
     }
 
     // ask for the department
@@ -35,7 +32,7 @@ public class Email {
         Scanner scan = new Scanner(System.in);
         int departmentCode;
         System.out.println("""
-                Department Codes\n
+                \nDepartment Codes\n
                 1 for Sales
                 2 for Development
                 3 for Accounting
@@ -46,7 +43,7 @@ public class Email {
                 departmentCode = scan.nextInt();
                 break;
             } catch (InputMismatchException e) {
-                System.out.println("Invalid department code.Please Try again.");
+                System.out.println("Invalid department code.Please Try again.\n");
             }
         }
         if(departmentCode == 1){return "sales";}
@@ -94,6 +91,7 @@ public class Email {
     public String showInfo(){
         return "DISPLAY NAME: " + firstName + " " + lastName +
                 "\nCOMPANY EMAIL: " + email +
+                "\nPASSWORD: " + password +
                 "\nMAILBOX CAPACITY: " + mailboxCapacity + "mb";
     }
 
