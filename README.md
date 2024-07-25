@@ -1,7 +1,7 @@
 <h1> EmailCraft : Craft your professional email address </h1>
 
 <p> Welcome to the EmailCraft, a comprehensive and user-friendly application designed to help you create email accounts for new hires effortlessly!.
-This application provides a sleek and efficient way to generate email address./p>
+This application provides a sleek and efficient way to generate email address.</p>
 
 <h2>Features</h2>
 <ul> 
