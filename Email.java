@@ -17,6 +17,8 @@ public class Email {
         // ask for a department
         this.department = setDepartment();
         System.out.println("Department: " + this.department);
+
+        //  return a random password
     }
 
     // ask for the department
@@ -42,6 +44,11 @@ public class Email {
         else if (departmentCode == 2){return "Dev";}
         else if (departmentCode == 3){return "Acct";}
         else {return "";}
+
+    }
+
+    // generate random password
+    private String randomPassword(int length){
 
     }
 }
