@@ -11,6 +11,10 @@
  <li><b> Information Display: <b> Offers get methods to display the name, email, and mailbox capacity. </li> 
 </ul>
 
+## License
+
+This project is licensed under the MIT License. See `LICENSE` for details.
+
 <h2> Getting Started </h2> 
 <p>Ready to generate email addresses for your new hires? Get started with this EmailCraft today! </p> 
 
